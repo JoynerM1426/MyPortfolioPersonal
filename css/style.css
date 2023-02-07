@@ -119,6 +119,18 @@
 .stop-scroll {
   overflow: hidden; }
 
+  /* profile */
+.profile-img{
+  width: 75%;
+  height: 700px;
+}
+@media (max-width: 768px) {
+  .profile-img{
+    height: 500px;
+    width: 65%;
+  }
+}
+
 /* Navigation burger end */
 .fh5co-top-banner {
   position: relative;
@@ -174,6 +186,9 @@
       color: #777; }
       @media (max-width: 768px) {
         .burger-container{
+          position: sticky;
+          margin-left: 30px;
+          margin-top: 10px;
           display: block;
         }
         .top-banner__inner .top-banner__text p {
