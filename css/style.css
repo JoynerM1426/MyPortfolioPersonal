@@ -42,6 +42,11 @@
   background-repeat: no-repeat;
   background-position: center bottom; }
 
+  /* cv Styles */
+.dowloand-cv{
+  text-decoration: none;
+}
+
 /* Universal style end */
 /* Includes */
 .site-navigation {
@@ -253,8 +258,11 @@
   border: 1px solid #fff;
   transition: 0.3s ease; }
   .brand-button:hover, .brand-button:focus {
-    color: #777; }
-
+  color: #777; 
+  font-size: 15px;
+  transition: 0.3s;
+  }
+ 
 .fh5co-about-me {
   position: relative;
   margin: 193px 0 199px; }
@@ -652,6 +660,7 @@
 }
 @media (max-width: 400px) {
   .footer-info__left{
+    margin: 0;
     width: 100%;
     }
   .content-img-footer{
