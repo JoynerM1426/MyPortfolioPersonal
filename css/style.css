@@ -317,7 +317,8 @@
   background-image: linear-gradient(
     180deg,
     #c18f59,
-    #FFF
+     goldenrod,
+     #FFF
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -366,6 +367,7 @@
   background-image: linear-gradient(
     180deg,
     #c18f59,
+    goldenrod,
     #FFF
   );
   background-clip: text;
