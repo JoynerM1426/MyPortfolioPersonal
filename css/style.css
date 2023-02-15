@@ -199,7 +199,94 @@
         .top-banner__inner .top-banner__text p {
           margin-bottom: 25px;
           font-size: 14px; } }
-  .top-banner__inner .top-banner__h2 {
+.top-banner__h2{
+  position: relative;
+  font-size: 50px;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  width: 7ch;
+  letter-spacing: 0;
+
+  
+  animation: typing 2s steps(7) .5s 2 alternate,
+  blink .5s  step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  0%
+  {width: 0;
+    color: #000;
+    border-right: 3px solid;
+    border-color: #fff;
+    /* font-size: 55px; */
+  }
+  50%{
+    color: gray;
+    border-right: 3px solid;
+    border-color: #fff;
+    /* font-size: 60px; */
+
+  }
+  100%{
+    color: lightgray;
+    border-right: 3px solid;
+    border-color: #fff;
+    /* font-size: 65px; */
+  }
+}
+@keyframes blink {
+ 
+  50%{
+    border-color: transparent;
+  }
+   
+}
+.top-banner__h4{
+  font-size: 50px;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  width: 8ch;
+  letter-spacing: 0;
+
+  
+  animation: typing2 2s steps(8) .5s 2 alternate ,
+  blink2 .5s  step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing2 {
+  0%
+  {width: 0;
+    color: #000;
+    border-right: 3px solid;
+    border-color: #fff;
+    /* font-size: 55px ; */
+  }
+  50%{
+    color: gray;
+    border-right: 3px solid;
+    border-color: #fff;
+    /* font-size: 60px ; */
+    
+  }
+  100%{
+    color: lightgray;
+    border-right: 3px solid;
+    border-color: #fff;
+    /* font-size: 65px ; */
+
+  }
+}
+@keyframes blink2 {
+ 
+  50%{
+    border-color: transparent;
+  }
+   
+}
+
+  .top-banner__inner  {
     font-size: 74px;
     letter-spacing: 3px;
     color: #fff;
@@ -208,7 +295,7 @@
       .top-banner__inner .top-banner__h2 {
         font-size: 50px; } }
     @media (max-width: 768px) {
-      .top-banner__inner .top-banner__h2 {
+      .top-banner__inner .top-banner__h2 .top-banner__h4 {
         font-size: 35px; } }
   .top-banner__inner .top-banner__text-up .top-banner__h2 {
     margin-top: 15px; }
@@ -237,10 +324,31 @@
   @media (max-width: 520px) {
     .top-banner__inner {
       flex-direction: column; } }
-
+/* hola soy y desarrollador web */
 .brand-span {
+  position: relative;
   font-size: 14px;
-  color: #c18f59; }
+  color: #c18f59;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-play-state: running;
+  animation-direction: normal;
+}
+@keyframes move {
+  0%{
+    left: 100%;
+  }
+  50%{
+    left: 50%;
+  }
+  100%{
+    left: 0;
+  }
+  
+}
 
   /* imgPortfolio */
 .img-portfolio{
@@ -249,6 +357,7 @@
   border-right: 2px solid gold;
 }
 .brand-button {
+  position: relative;
   display: inline-block;
   padding: 10px 20px;
   font-size: 11px;
@@ -256,11 +365,44 @@
   text-decoration: none;
   color: #c18f59;
   border: 1px solid #fff;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+  animation-name: moveBox;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  box-shadow: 5px 5px 10px white;
+}
+
+@keyframes moveBox {
+
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
   .brand-button:hover, .brand-button:focus {
+  animation-play-state: paused;
   color: #777; 
   font-size: 15px;
   transition: 0.3s;
+  }
+  @keyframes identifier {
+    
   }
  
 .fh5co-about-me {
