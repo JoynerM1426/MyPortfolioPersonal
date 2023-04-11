@@ -229,7 +229,7 @@ body.darkmode{
   flex-direction: row;
   justify-content: end;
   width: 100%;
-  top: 105px;
+  top: 75px;
   right: 10px;
 }
 @media (max-width:768px) {
