@@ -223,14 +223,25 @@ body.darkmode{
   color: #000;
 }
 /* moving ball in checkbox */
+
 .changeMode{
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: end;
   width: 100%;
-  top: 15px;
+  top: 105px;
   right: 10px;
+}
+@media (max-width:768px) {
+  .changeMode{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    top: 15px;
+    right: 10px;
+  }
 }
 .label{
   border: 2px solid #222;
