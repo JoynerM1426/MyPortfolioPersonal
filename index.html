@@ -11,7 +11,7 @@
 	<title>Joyner Miranda</title>
 </head>
 	<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-<body>
+<body >
 
 	<!-- Navigation -->
 	<nav class="site-navigation">
@@ -25,6 +25,19 @@
 					<li><a href="#footer-id">Contactame</a></li>
 				</ul>
 			</div>
+			<div class="top-button-nav">
+				<div class="changeMode">
+					<input type="checkbox" id="bdark" class="checkbox">
+					<label for="bdark" class="label">
+							<i class="fas fa-moon"></i>
+							<i class="fas fa-sun"></i>
+							<div class="ball"></div>
+					</label>
+				</div>
+				<div class="button-lenguaje">
+					<button class="espanol" onclick="changeLanguage()">Cambiar idioma</button>
+					<button class="ingles hidden" onclick="changeLanguage()">Change language</button>
+				</div>
 			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
@@ -42,33 +55,51 @@
 
 	<!-- Top banner -->
 	<nav class="nav-main">
-		<div class="content-logo">
-			<img class="content-logo" src="images/PhotoRoom-20221130_190451.png" alt="">
-		</div>
 		<ul class="nav-main-ul">
-				<li class="nav-li"><a class="nav-a" href="#home-page-id">Inicio</a></li>
-				<li class="nav-li"><a class="nav-a" href="#about-me-id">Acerca de mi</a></li>
-				<li class="nav-li"><a class="nav-a" href="#my-portfolio-id">Mi portafolio</a></li>
-				<li class="nav-li"><a class="nav-a" href="#follo-me-id">Sigueme</a></li>
-				<li class="nav-li"><a class="nav-a" href="#footer-id">Contactame</a></li>
+				<li class="nav-li espanol"><a class="nav-a" href="#home-page-id">Inicio</a></li>
+				<li class="nav-li ingles hidden"><a class="nav-a" href="#home-page-id">Home</a></li>
+				<li class="nav-li espanol"><a class="nav-a" href="#about-me-id">Acerca de mi</a></li>
+				<li class="nav-li ingles hidden"><a class="nav-a" href="#about-me-id">About Me</a></li>
+				<li class="nav-li espanol"><a class="nav-a" href="#my-portfolio-id">Mi portafolio</a></li>
+				<li class="nav-li ingles hidden"><a class="nav-a" href="#my-portfolio-id">My Portfolio</a></li>
+				<li class="nav-li espanol"><a class="nav-a" href="#follo-me-id">Sigueme</a></li>
+				<li class="nav-li ingles hidden"><a class="nav-a" href="#follo-me-id">Follow Me</a></li>
+				<li class="nav-li espanol"><a class="nav-a" href="#footer-id">Contactame</a></li>
+				<li class="nav-li ingles hidden"><a class="nav-a" href="#footer-id">Contact Me</a></li>
 		</ul>
+		<div class="top-button-nav">
+			<div class="changeMode">
+				<input type="checkbox" id="bdark" class="checkbox">
+				<label for="bdark" class="label">
+						<i class="fas fa-moon"></i>
+						<i class="fas fa-sun"></i>
+						<div class="ball"></div>
+				</label>
+			</div>
+			<div class="button-lenguaje">
+				<button class="espanol" onclick="changeLanguage()">Cambiar idioma</button>
+				<button class="ingles hidden" onclick="changeLanguage()">Change language</button>
+			</div>
 	</nav>
 	<section class="fh5co-top-banner" id="home-page-id">
 		<div class="top-banner__inner site-container">
-			<div class="top-banner__image">
+			<!-- <div class="top-banner__image">
 				<img class="profile-img" src="./images/PhotoRoom-20221129_221231.png" alt="author image">
-			</div>
-			<div class="top-banner__text">
+			</div> -->
 				<div class="top-banner__text-up" >
-					<span class="brand-span">Hola soy!</span>
+					<span class="brand-span espanol">Hola soy!</span>
+					<span class="brand-span ingles hidden">Hello I'am!</span>
 					<h2 class="top-banner__h2">Joyner</h2>
 				</div>
 				<div class="top-banner__text-down">
 					<h2 class="top-banner__h4">Miranda</h2>
-					<span class="brand-span">Desarrollador web Front-end</span>
-				
+					<span class="brand-span espanol">Desarrollador web FullStack</span>
+					<span class="brand-span ingles hidden">Developer web FullStack</span>
 				</div>
-				<a   download="Joyner Miranda CV" href="./CV/Cv Joyner Miranda (1).pdf" class="brand-button"> Descarga CV</a>
+				<section class="cvs ">
+					<a   download="Joyner Miranda CV" href="./CV/Cv Joyner Miranda (1).pdf" class="brand-button"> Descarga CV ES</a> 
+					<a   download="Joyner Miranda CV" href="./CV/Cv Joyner Miranda (1).pdf" class="brand-button"> Download Cv ENG</a>
+				</section>
 			</div>
 		</div>
 	</section>
@@ -90,14 +121,16 @@
 						<h2 class="universal-h2">iranda</h2>
 					</div>
 				</div>
-				<p class="my-softSkills">Apasionado desarrollador web Front-end, con habilidad de trabajo en equipo.</p>
+				<p class="my-softSkills espanol">Apasionado desarrollador web Front-end, con habilidad de trabajo en equipo.</p>
+				<p class="my-softSkills ingles hidden">Passionate Front-end web developer with team-working skills.</p>
 			</article>
 			<div class="about-me__text">
 				<div class="about-me-slider">
 					<div class="about-me-single-slide">
-						<h2 class="universal-h2 universal-h2-bckg">Acerca de mí</h2>
-						<p><span>S</span>oy un joven capaz de resolver problemas referentes a mis conocimientos, con las habilidades adquiridas; y si no llegase a tener esa habilidad, la investigaría, la encontraría y la utilizaría de ahí en adelante; porque los grandes logros se tratan de no rendirse. Como dijo el Dr. Joe Dizpensa "Tu personalidad crea tu realidad personal".</p>
-					
+						<h2 class="universal-h2 universal-h2-bckg espanol">Acerca de mí</h2>
+						<p class="espanol"><span class="espanol">S</span>oy un joven capaz de resolver problemas referentes a mis conocimientos, con las habilidades adquiridas; y si no llegase a tener esa habilidad, la investigaría, la encontraría y la utilizaría de ahí en adelante; porque los grandes logros se tratan de no rendirse, si no de perseverar. Como dijo el Dr. Joe Dizpensa "Tu personalidad crea tu realidad personal".</p>
+						<h2 class="universal-h2 universal-h2-bckg ingles hidden">About me</h2>
+						<p class="ingles hidden"><span class="ingles hidden">I</span> am a young person capable of solving problems related to my knowledge, using the skills I have acquired; and if I don't have that ability, I would research, find it, and use it from then on; because great achievements are not about giving up, but about persevering. As Dr. Joe Dispenza said, "Your personality creates your personal reality."</p>
 					</div>
 				</div>
 			</div>
@@ -110,16 +143,20 @@
 	<!-- Blog -->
 	<section class="fh5co-blog" >
 		<div class="site-container">
-			<h2 class="universal-h2 universal-h2-bckg" >Mi Portafolio</h2>
+			<h2 class="universal-h2 universal-h2-bckg espanol" >Mi Portafolio</h2>
+			<h2 class="universal-h2 universal-h2-bckg ingles hidden" >My Portfolio</h2>
 			<div class="blog-slider blog-inner">
 				<div class="single-blog">
 					<div class="single-blog__img">
 						<a href="https://productslist-crud.netlify.app/" target="_blank"><img class="img-portfolio" src="./images/ToDoIlustration.png" alt="image-ToDo"></a>
 					</div>
 					<div class="single-blog__text">
-						<h4>ToDo con React</h4>
-						<span>Enero 17 de 2023</span>
-						<p>Un To-Do de productos utilizando el CRUD en react, donde podrás organizarte para crear, eliminar, actualizar los productos, vamos!!</p>
+						<h4 class="espanol">ToDo con React</h4>
+						<h4 class="ingles hidden">ToDo using React</h4>
+						<span class="espanol">Enero 17 de 2023</span>
+						<span class="ingles hidden">January 17, 2023.</span>
+						<p class="espanol">Un To-Do de productos utilizando el CRUD en react, donde podrás organizarte para crear, eliminar, actualizar los productos, vamos!!</p>
+						<p class="ingles hidden">A products To-Do list using CRUD in React, where you can organize yourself to create, delete, update products. Let's go!!</p>
 					</div>
 				</div>
 				<div class="single-blog">
@@ -128,8 +165,10 @@
 					</div>
 					<div class="single-blog__text">
 						<h4>Pokédex</h4>
-						<span>Enero 25 de 2023</span>
-						<p>Un mundo donde conocerás a los pokemones, podrás buscar por tipo, por nombre y conocer más de sus características; usando redux, react-router-dom; escribe tu nombre y siéntete un entrenador!! </p>
+						<span class="espanol">Enero 25 de 2023</span>
+						<span class="ingles hidden">January 25, 2023</span>
+						<p class="espanol">Un mundo donde conocerás a los pokemones, podrás buscar por tipo, por nombre y conocer más de sus características; usando redux, react-router-dom; escribe tu nombre y siéntete un entrenador!! </p>
+						<p class="ingles hidden">A world where you will meet Pokémon, you can search by type, by name, and learn more about their characteristics; using Redux, react-router-dom. Write your name and feel like a trainer!! </p>
 					</div>
 				</div>
 				<div class="single-blog">
@@ -138,8 +177,10 @@
 					</div>
 					<div class="single-blog__text">
 						<h4>E-commerce </h4>
-						<span>Febrero 3 de 2023</span>
-						<p>Trabajo hecho en grupo donde podrás mirar diferentes productos consumidos de un API, y también  agregaras productos al carrito, filtrar por precio y categoría, todo esto al registrarte, ven a darle un vístazo!!</p>
+						<span class="espanol">Febrero 3 de 2023</span>
+						<span class="ingles hidden">February 3, 2023</span>
+						<p class="espanol">Trabajo de clonación de una tienda online donde podrás mirar diferentes productos de mi API usando Nodejs,Express, Sequelize, SQlpostgres, registrate y ven a darle un vístazo!!</p>
+						<p class="ingles hidden">Online store cloning project where you can view different products from my API using Nodejs, Express, Sequelize, SQLpostgres. Register and come take a look!!</p>
 					</div>
 				</div>
 			</div>
@@ -155,13 +196,15 @@
 	<section class="fh5co-social">
 		<div class="site-container" >
 			<div class="social">
-				<h5>Sígueme!</h5>
+				<h5 class="espanol">Sígueme!</h5>
+				<h5 class="ingles hidden">Follow me!</h5>
 				<div class="social-icons">
 					<a href="https://www.linkedin.com/in/joyner-miranda-16a2bb24b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 					<a href="https://instagram.com/joym_go14?igshid=YzdkMWQ2MWU=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					<a href="https://github.com/JoynerM1426" target="_blank"><i class="fa-brands fa-square-github"></i></a>
 				</div>
-				<h5>Compártelo!</h5>
+				<h5 class="espanol">Compártelo!</h5>
+				<h5 class="ingles hidden">Share it!</h5>
 			</div>
 		</div>
 		<span id="footer-id"></span>
@@ -180,8 +223,9 @@
 						
 					</div>
 					<div class="footer-info__right">
-						<h5>Contactame</h5>
-						<p class="footer-phone">Whatsapp: +507 65587850</p>
+						<h5 class="espanol">Contactame</h5>
+						<h5 class="ingles hidden">Contact me</h5>
+						<p class="footer-phone">Whatsapp: +507 6070-9286</p>
 						<p>E-mail: migue1409.mg@gmail.com</p>
 						<div class="social-icons">
 							<a href="mailto:migue1409.mg@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
@@ -190,23 +234,33 @@
 					</div>
 				</div>
 				<div class="footer-contact-form">
-					<h5>Déjame un comentario</h5>
+					<h5 class="espanol">Déjame un comentario</h5>
+					<h5 class="ingles hidden">Send me a comment.</h5>
 					<form id="form">
-						<div class="field">
-							<label for="emailjs_name">Nombre</label>
+						<div class="field espanol">
+							<label  for="emailjs_name">Nombre</label>
+							<input type="text" name="emailjs_name" id="emailjs_name">
+						</div>
+						<div class="field ingles hidden">
+							<label  for="emailjs_name">Name</label>
 							<input type="text" name="emailjs_name" id="emailjs_name">
 						</div>
 						<div class="field">
 							<label for="emailjs_email">E-mail</label>
 							<input type="email" name="emailjs_email" id="emailjs_email">
 						</div>
-						<div class="field">
-							<label for="emailjs_message">Mensaje</label>
+						<div class="field espanol ">
+							<label  for="emailjs_message">Mensaje</label>
+							<textarea type="text" name="emailjs_message" id="emailjs_message">
+							</textarea>
+						</div>
+						<div class="field ingles hidden ">
+							<label  for="emailjs_message">Menssage</label>
 							<textarea type="text" name="emailjs_message" id="emailjs_message">
 							</textarea>
 						</div>
 					
-						<input type="submit" id="button" value="Send Email" >
+						<input  type="submit" id="button" value="Send Email" >
 					</form>
 					
 					<script type="text/javascript"
