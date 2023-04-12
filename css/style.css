@@ -235,8 +235,10 @@ body.darkmode{
 @media (max-width:768px) {
   .changeMode{
     position: fixed;
+    display: flex;
     justify-content: end;
     top: 15px;
+    left: 85%;
   }
 }
 .label{
