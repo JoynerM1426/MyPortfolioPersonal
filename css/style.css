@@ -225,22 +225,18 @@ body.darkmode{
 /* moving ball in checkbox */
 
 .changeMode{
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: end;
   width: 100%;
-  top: 75px;
-  right: 10px;
+  right: 5px;
 }
 @media (max-width:768px) {
   .changeMode{
     position: fixed;
-    display: flex;
-    flex-direction: row;
     justify-content: end;
-    width: 100%;
     top: 15px;
-    right: 10px;
   }
 }
 .label{
